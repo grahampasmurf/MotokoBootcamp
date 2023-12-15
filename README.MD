@@ -2,6 +2,8 @@
 
 > This repository is an explanation on how to graduate and complete the DAO Adventure. To check out the complete DAO Adventure repository, [click here](https://github.com/motoko-bootcamp/dao-adventure).
 
+<p align="center"><img src="./assets/diploma_mbc.png" style="width: 500px;" /></p>
+
 # Motivation
 
 A DAO, which stands for Decentralized Autonomous Organization, is a new type of organization (or company) that runs leveraging blockchain technology. This enables us to create more transparent, trusted and efficient organisations.
