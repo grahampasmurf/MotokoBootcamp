@@ -23,7 +23,7 @@ For your final project you need to choose among our 2 available tracks.
 | Track                                                    | Description                                                                                                                                                                                                                              |
 | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1. Guided project (\*recommended for beginners)          | Build a mini-DAO that controls the text displayed on a webpage. Start with a template containing a ready-to-plug frontend. No frontend experience needed. [Click Here](https://github.com/motoko-bootcamp/dao-adventure-template-guided) |
-| 2. Open project (\*recommended for experienced builders) | Build anything related to DAOs. Start with a template. Frontend experience recommended. [Click Here](https://github.com/motoko-bootcamp/dao-adventure-template-open)                                                                     |
+| 2. Open project (\*recommended for experienced builders) | Build anything you want. Start with a template. Frontend experience recommended. [Click Here](https://github.com/motoko-bootcamp/dao-adventure-template-open)                                                                            |
 
 # How to submit?
 
