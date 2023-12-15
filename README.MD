@@ -2,7 +2,7 @@
 
 > This repository is an explanation on how to graduate and complete the DAO Adventure. To check out the complete DAO Adventure repository, [click here](https://github.com/motoko-bootcamp/dao-adventure).
 
-<p align="center"><img src="./assets/diploma_mbc.png" style="width: 500px;" /></p>
+<p align="center"><img src="./assets/diploma_mbc.jpg" style="width: 500px;" /></p>
 
 # Motivation
 
