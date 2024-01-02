@@ -18,7 +18,8 @@ Your goal, if you wish to earn your **Motoko Bootcamp Diploma**, is to build a D
 
 # How to submit? 📝
 
-Head over to [motokobootcamp.com](https://www.motokobootcamp.com/), **Submit** section and **Graduation**. You'll just need to input your canister ID and wait for around 20 seconds for the verification process to be completed.
+Head over to [motokobootcamp.com](https://www.motokobootcamp.com/), **Submit** section and **Graduation**. <br/>
+You'll just need to input your canister ID and wait for around 20 seconds for the verification process to be completed.
 
 # Benefits of graduation 🎓
 
