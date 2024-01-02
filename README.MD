@@ -4,32 +4,23 @@
 
 <p align="center"><img src="./assets/diploma_mbc.jpg" style="width: 500px;" /></p>
 
-# Motivation
+# Motivation ⭐️
 
 A DAO, which stands for Decentralized Autonomous Organization, is a new type of organization (or company) that runs leveraging blockchain technology. This enables us to create more transparent, trusted and efficient organisations.
 
 **DAOs** are the biggest innovation in the field of governance since the invention of the [LLC](https://www.investopedia.com/terms/l/llc.asp) or perhaps even democracy itself. Just like the **steam engine** made the **Industrial Revolution** possible by harnessing **physical powe**r, DAOs harness **political power** and make a Web3 revolution possible. This could fundamentally change how we organize resources, people and capital with the end goal of creating a more stable, flourishing, collaborative and fair civilisation.
 
-# Mission
+# Mission 🎯
 
 This future is only possible if enough builders stands up and make the dream a reality.
 
-Your goal, if you wish to earn your **Motoko Bootcamp Diploma**, is to build an application that leverages the power of DAOs.
+Your goal, if you wish to earn your **Motoko Bootcamp Diploma**, is to build a DAO that follow the requirements specified in the [PROJECT.MD](./PROJECT.MD) file.
 
-## Tracks
+# How to submit? 📝
 
-For your final project you need to choose among our 2 available tracks.
+Head over to [motokobootcamp.com](https://www.motokobootcamp.com/), **Submit** section and **Graduation**. You'll just need to input your canister ID and wait for around 20 seconds for the verification process to be completed.
 
-| Track                                                    | Description                                                                                                                                                                                                                              |
-| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Guided project (\*recommended for beginners)          | Build a mini-DAO that controls the text displayed on a webpage. Start with a template containing a ready-to-plug frontend. No frontend experience needed. [Click Here](https://github.com/motoko-bootcamp/dao-adventure-template-guided) |
-| 2. Open project (\*recommended for experienced builders) | Build anything you want. Start with a template. Frontend experience recommended. [Click Here](https://github.com/motoko-bootcamp/dao-adventure-template-open)                                                                            |
-
-# How to submit?
-
-Fill out the graduation form 👉 https://forms.gle/jeH77bb1MnBRxqAf9
-
-# Benefits of graduation
+# Benefits of graduation 🎓
 
 Your Motoko Bootcamp diploma will grant you the following lifetime benefits:
 
@@ -38,13 +29,3 @@ Your Motoko Bootcamp diploma will grant you the following lifetime benefits:
 - Access to the **Motoko Bootcamp Manifesto**.
 
 > The Motoko Bootcamp Diploma and the associated on-chain infrastructure are still under development. We will keep you updated on the progress.
-
-## Frequently Asked Questions
-
-| FAQ                                                                                                | Answer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Do I need to build a frontend?**                                                                 | - The primary focus is on Motoko. - If you intend to develop a frontend, you'll need to use JavaScript and utilize existing frameworks like Angular, Vue, Svelte, or React. - If you're already experienced in frontend development, feel free to showcase your skills! However, if you're not familiar with frontend development, concentrate on the Motoko aspect and solely work on the backend. When building the guided project, you'll begin with a template repository that includes a pre-configured frontend ready for integration.                                                                                                                                                                                                                                                                                                                                                                                 |
-| **Do I need to integrate with the Internet Identity?**                                             | - Not necessarily. - A lot of the applications you’ll see integrate with it because it’s easy, efficient, and works well on the Internet Computer. - However, it’s not the only way to authenticate users; you could also use: 1. Wallet-based solutions like [Plug](https://plugwallet.ooo/) or the [Me Wallet from AstroX](https://play.google.com/store/apps/details?id=com.astrox.me&hl=en_US&pli=1). These are different types of wallets, each offering specific features. 2. [NFID](https://nfid.one/), which builds upon Internet Identity by adding more features such as email login, credentials management, and wallet integration. - It's important to note that these authentication methods are mainly relevant for applications with a user interface (frontend). If your application doesn't have a frontend (refer to the previous question), then integrating an authentication provider is not required. |
-| **How to get started, do you have templates?**                                                     | - Yes, there is a template starter for each project in the repository.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| **Even after brainstorming and looking at examples, I don't have any ideas. What should I build?** | - I got it, sometimes inspiration takes a long time to come, don't worry. - In that case, try to build the **Guided project**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **When can I expect to receive my diploma after submitting my application?**                       | - The Motoko Bootcamp Diploma and the associated on-chain infrastructure are still under development. - We will keep you updated on the progress.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |

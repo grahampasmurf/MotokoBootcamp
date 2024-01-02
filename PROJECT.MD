@@ -1,0 +1,96 @@
+# Project 6 - Forging your own path
+
+<p align="center"><img src="./assets/cover.webp" style="width: 500px;" /></p>
+
+## Introduction
+
+A DAO, which stands for Decentralized Autonomous Organization, is a new type of organization (or company) that runs leveraging blockchain technology. This enables us to create more transparent, trusted and efficient organisations.
+
+**DAOs** are the biggest innovation in the field of governance since the invention of the [LLC](https://www.investopedia.com/terms/l/llc.asp) or perhaps even democracy itself. Just like the **steam engine** made the **Industrial Revolution** possible by harnessing **physical powe**r, DAOs harness **political power** and make a Web3 revolution possible. This could fundamentally change how we organize resources, people and capital with the end goal of creating a more stable, flourishing, collaborative and fair civilisation.
+
+## Mission 🎯
+
+This future is only possible if enough builders stands up to make the dream a reality. Your goal, if you wish to earn your **Motoko Bootcamp Diploma**, is to build a simple DAO. <br/>
+
+Based on all the knowledge you've acquired during your training, you should be able to build, from scratch, a simple DAO that follows the necessary requirements, and even add some additional features if you wish to do so.
+
+## Requirements 👨‍🏫
+
+1. **Webpage Control**: The DAO can modify text on a specific webpage. This change is based on proposals approved by DAO members.
+
+2. **Membership and Token Allocation**:
+
+- New members receive 10 Motoko Bootcamp Tokens (MBT) upon joining.
+- MBTs are essential for participating in DAO activities.
+
+3. **Role System**:
+
+- The DAO comprises three roles: **Students**, **Graduates**, and **Mentors**.
+- **Students**: All new members start as students. They are members who haven't completed the Motoko Bootcamp.
+  Graduates: These are members who have completed the Motoko Bootcamp. They gain the right to vote on proposals. Any member can become a Graduate through a `graduate` function, which only a **Mentor** executes. There's no verification process for this.
+- **Mentors**: Graduates who are selected by the DAO become **\*Mentors**. They can both vote on and create proposals. An existing Mentor can attempt to assign the Mentor role to any member by creating a proposal that has to be approved by the DAO.
+
+4. **Proposal Creation**
+
+- Only Mentors are authorized to create proposals.
+- To create a proposal, a Mentor must burn 1 MBT, which decreases their token balance.
+
+5. **Voting Mechanism**:
+
+- Voting rights are exclusive to Graduates and Mentors.
+- The voting power of a member is proportional to their MBT holdings.
+- Proposal outcomes are determined by the cumulative MBTs:
+  - Passing a Proposal: A proposal is approved if the total MBTs of supporters are 100 or more.
+  - Rejecting a Proposal: A proposal is rejected if the total MBTs of opponents are 100 or more.
+- There is no MBT cost for voting.
+
+6. **Proposal Execution**:
+
+- Approved proposals are executed automatically.
+
+7. **Initial Setup**:
+   The initial setup of the DAO includes the following members to ensure the DAO is operational from the start:
+
+- **Mentor**:
+  - Name: **motoko_bootcamp**
+  - Associated Principal: `gth2f-eyaaa-aaaaj-qa2pq-cai`.
+- **Student 1**:
+  - Name: **Motoko**
+  - Associated Principal: `4ey3h-nplzm-vyocb-xfjab-wwsos-ejl4y-27juy-qresy-emn7o-eczpl-pae`.
+- **Student 2**:
+  - Name: **Seb**
+  - Associated Principal: `im5mh-xqo25-qfehz-urydn-n7fpm-ylmaw-n6fld-h2xdx-46pcp-tcuti-eqe`.
+- **Student 3**:
+  - Name: Your name
+  - Associated Principal: The principal of the identity used when deploying the canister for the first time, which we call the `owner` of the canister.
+
+> You can decide to hardcode the initial setup or create an external scripts and additional function that will be executed by the `owner` of the canister upon deployment. This is up to you.
+
+## Token faucet 💰
+
+You are required to use the **Motoko Bootcamp Token**. This a free and educational token faucet. You can mint as much tokens as you need. This token has no real economical value and is only used for educational purposes.
+
+The canister ID of the token faucet canister is: `dg2ce-tqaaa-aaaah-abz6q-cai`. You can access to the interface of the token faucet [here](https://dashboard.internetcomputer.org/canister/dg2ce-tqaaa-aaaah-abz6q-cai).
+
+## Types 📚
+
+All the necessary types are defined in the [types.mo](./src/types.mo) file.
+
+## Interface 📺
+
+The interface of the DAO should be similar to the following:
+
+```motoko
+actor {
+    getName : shared query () -> async Text;
+    getManifesto : shared query () -> async Text;
+    registerMember : shared (name : Text) -> async Result<(),Text>;
+    getMember : shared query (p : Principal) -> async Result<Member,Text>;
+    graduate : shared (student : Principal) -> async Result<(),Text>;
+    createProposal : shared (content : ProposalContent) -> async Result<ProposalId,Text>;
+    getProposal : shared query (id : ProposalId) -> async Result<Proposal,Text>;
+    getAllProposals : shared query () -> async [Proposal];
+    voteProposal : shared (proposalId : ProposalId, vote : Vote) -> async Result<(),Text>;
+    http_request : shared query (request : HttpRequest) -> async HttpResponse;
+}
+```
