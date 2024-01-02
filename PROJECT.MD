@@ -66,15 +66,34 @@ Based on all the knowledge you've acquired during your training, you should be a
 
 > You can decide to hardcode the initial setup or create an external scripts and additional function that will be executed by the `owner` of the canister upon deployment. This is up to you.
 
+8. **Social information** (Optional but recommended if you wish to see your project featured on the Motoko Bootcamp website)
+
+- The DAO exposes public information about it's name, logo, manifesto and social networks. This information is compiled and accessible through the `getStats` function.
+
+````motoko
+public type Stats = {
+  name : Text; // The name of the DAO;
+  logo: Blob; // The logo of the DAO - encoded as a PNG
+  picture : Blob; // A picture reprenting the DAO - encoded as a PNG
+  numberOfMembers : Nat; // The number of members in the DAO
+  manifesto : Text; // The manifesto of the DAO
+  socialLinkDAO: Text; // An URL to the DAO's social media page (e.g. Twitter/ OpenChat / Discord / Telegram / DAO's website)
+  socialLinkBuilder: Text; // An URL to the DAO's creator social media page (e.g. Twitter/ OpenChat / Personal Blog)
+};
+```
+
+> The `logo` and `picture` fields are required to be encoded as PNG. The logo should be a square image of 100x100 pixels. The picture should be a 16:9 image of 1920x1080 pixels.
+
 ## Token faucet 💰
 
 You are required to use the **Motoko Bootcamp Token**. This a free and educational token faucet. You can mint as much tokens as you need. This token has no real economical value and is only used for educational purposes.
 
 The canister ID of the token faucet canister is: `dg2ce-tqaaa-aaaah-abz6q-cai`. You can access to the interface of the token faucet [here](https://dashboard.internetcomputer.org/canister/dg2ce-tqaaa-aaaah-abz6q-cai).
 
-## Types 📚
+## Types ⚙️
 
 All the necessary types are defined in the [types.mo](./src/types.mo) file.
+
 
 ## Interface 📺
 
@@ -86,6 +105,7 @@ actor {
     getManifesto : shared query () -> async Text;
     registerMember : shared (name : Text) -> async Result<(),Text>;
     getMember : shared query (p : Principal) -> async Result<Member,Text>;
+    getStats : shared query () -> async Stats;
     graduate : shared (student : Principal) -> async Result<(),Text>;
     createProposal : shared (content : ProposalContent) -> async Result<ProposalId,Text>;
     getProposal : shared query (id : ProposalId) -> async Result<Proposal,Text>;
@@ -93,4 +113,4 @@ actor {
     voteProposal : shared (proposalId : ProposalId, vote : Vote) -> async Result<(),Text>;
     http_request : shared query (request : HttpRequest) -> async HttpResponse;
 }
-```
+````

@@ -2,6 +2,16 @@ import Principal "mo:base/Principal";
 import Time "mo:base/Time";
 module {
 
+    public type Stats = {
+        name : Text; // The name of the DAO;
+        logo: Blob; // The logo of the DAO - encoded as a PNG
+        picture : Blob; // A picture reprenting the DAO - encoded as a PNG
+        numberOfMembers : Nat; // The number of members in the DAO
+        manifesto : Text; // The manifesto of the DAO
+        socialLinkDAO: Text; // An URL to the DAO's social media page (e.g. Twitter/ OpenChat / Discord / Telegram / DAO's website)
+        socialLinkBuilder: Text; // An URL to the DAO's creator social media page (e.g. Twitter/ OpenChat / Personal Blog)
+    };
+
     public type Role = {
         #Student;
         #Graduate;
