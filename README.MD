@@ -147,8 +147,7 @@ Your Motoko Bootcamp diploma will grant you the following lifetime benefits:
 
 > **The Motoko Bootcamp Diploma and the associated on-chain infrastructure are still under development. We will keep you updated on the progress.**
 
-
-## **What’s next?** 🎓
+## **What’s next?** ⏭️
 
 COMING SOON
 
