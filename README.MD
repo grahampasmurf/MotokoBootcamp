@@ -4,13 +4,13 @@
 
 # Graduation Project - Forging your own path
 
-<p align="center"><img src="./assets/cover_1.webp" style="width: 500px;" /></p>
+<p align="center"><img src="./assets/cover_1.webp" /></p>
 
 ## Motivation 💭
 
 A DAO, which stands for Decentralized Autonomous Organization, is a new type of organization (or company) that runs leveraging blockchain technology. This enables us to create more transparent, trusted and efficient organisations.
 
-<p align="center"><img src="./assets/cover_2.png" style="width: 500px;" /></p>
+<p align="center"><img src="./assets/cover_2.png" /></p>
 
 **DAOs** are the biggest innovation in the field of governance since the invention of the [LLC](https://www.investopedia.com/terms/l/llc.asp) or perhaps even democracy itself. Just like the **steam engine** made the **Industrial Revolution** possible by harnessing **physical powe**r, DAOs harness **political power** and make a Web3 revolution possible. This could fundamentally change how we organize resources, people and capital with the end goal of creating a more stable, flourishing, collaborative and fair civilisation.
 
