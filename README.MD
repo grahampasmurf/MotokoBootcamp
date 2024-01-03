@@ -8,8 +8,8 @@
 
 - [Motoko Bootcamp Dashboard](https://www.motokobootcamp.com/) (Click on **Login** to access)
 - [Motoko Bootcamp Discord](https://discord.gg/qEF2W3dBrd)
-- [Graduation Repository](https://github.com/motoko-bootcamp/dao-adventure-graduation)
-- [Graduation Notion Guide]()
+- [Graduation Notion Guide](https://tomahawkvc.notion.site/Motoko-Bootcamp-Graduation-f31b9b7a89ed434abf6a96510450ab36)
+- [Graduation Video Guide] - COMING SOON
 
 ## Motivation 💭
 
@@ -146,3 +146,12 @@ Your Motoko Bootcamp diploma will grant you the following lifetime benefits:
 - Additional benefits to be announced.
 
 > **The Motoko Bootcamp Diploma and the associated on-chain infrastructure are still under development. We will keep you updated on the progress.**
+
+
+## **What’s next?** 🎓
+
+COMING SOON
+
+## **Credits** 🙏
+
+An initiative powered and 100% supported by [Code & State](https://www.codeandstate.com/) - the leading Web3 venture studio for the Internet Computer.
