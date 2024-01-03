@@ -4,6 +4,13 @@
 
 > This repository correspond to the graduation phase of the DAO Adventure. To check out the complete DAO Adventure repository, [click here](https://github.com/motoko-bootcamp/dao-adventure).
 
+## Important resources 📌
+
+- [Motoko Bootcamp Dashboard](https://www.motokobootcamp.com/) (Click on **Login** to access)
+- [Motoko Bootcamp Discord](https://discord.gg/qEF2W3dBrd)
+- [Graduation Repository](https://github.com/motoko-bootcamp/dao-adventure-graduation)
+- [Graduation Notion Guide]()
+
 ## Motivation 💭
 
 A DAO, which stands for Decentralized Autonomous Organization, is a new type of organization (or company) that runs leveraging blockchain technology. This enables us to create more transparent, trusted and efficient organisations.
@@ -21,13 +28,6 @@ Your goal, if you wish to earn your **Motoko Bootcamp Diploma**, is to build a s
 <p align="center"><img src="./assets/diploma_mbc.jpg" style="width: 500px;" /></p>
 
 Based on all the knowledge you've acquired during your training, you should be able to build, from scratch, a simple DAO that follows the necessary requirements.
-
-## Important resources 📌
-
-- [Motoko Bootcamp Dashboard](https://www.motokobootcamp.com/) (Click on **Login** to access)
-- [Motoko Bootcamp Discord](https://discord.gg/qEF2W3dBrd)
-- [Graduation Repository](https://github.com/motoko-bootcamp/dao-adventure-graduation)
-- [Graduation Notion Guide]()
 
 ## Requirements 👨‍🏫
 
