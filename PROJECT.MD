@@ -1,6 +1,6 @@
 # Project 6 - Forging your own path
 
-<p align="center"><img src="./assets/cover.webp" style="width: 500px;" /></p>
+<p align="center"><img src="./assets/cover_1.webp" style="width: 500px;" /></p>
 
 ## Introduction
 
@@ -8,11 +8,17 @@ A DAO, which stands for Decentralized Autonomous Organization, is a new type of 
 
 **DAOs** are the biggest innovation in the field of governance since the invention of the [LLC](https://www.investopedia.com/terms/l/llc.asp) or perhaps even democracy itself. Just like the **steam engine** made the **Industrial Revolution** possible by harnessing **physical powe**r, DAOs harness **political power** and make a Web3 revolution possible. This could fundamentally change how we organize resources, people and capital with the end goal of creating a more stable, flourishing, collaborative and fair civilisation.
 
+<p align="center"><img src="./assets/cover_2.png" style="width: 500px;" /></p>
+
 ## Mission 🎯
 
-This future is only possible if enough builders stands up to make the dream a reality. Your goal, if you wish to earn your **Motoko Bootcamp Diploma**, is to build a simple DAO. <br/>
+This future is only possible if enough builders stand up to make the dream a reality. 
+
+Your goal, if you wish to earn your **Motoko Bootcamp Diploma**, is to build a simple DAO. <br/>
 
 Based on all the knowledge you've acquired during your training, you should be able to build, from scratch, a simple DAO that follows the necessary requirements, and even add some additional features if you wish to do so.
+
+<p align="center"><img src="./assets/diploma_mbc.jpg" style="width: 500px;" /></p>
 
 ## Requirements 👨‍🏫
 
@@ -70,7 +76,7 @@ Based on all the knowledge you've acquired during your training, you should be a
 
 - The DAO exposes public information about it's name, logo, manifesto and social networks. This information is compiled and accessible through the `getStats` function.
 
-````motoko
+```motoko
 public type Stats = {
   name : Text; // The name of the DAO;
   logo: Blob; // The logo of the DAO - encoded as a PNG
@@ -88,12 +94,13 @@ public type Stats = {
 
 You are required to use the **Motoko Bootcamp Token**. This a free and educational token faucet. You can mint as much tokens as you need. This token has no real economical value and is only used for educational purposes.
 
-The canister ID of the token faucet canister is: `dg2ce-tqaaa-aaaah-abz6q-cai`. You can access to the interface of the token faucet [here](https://dashboard.internetcomputer.org/canister/dg2ce-tqaaa-aaaah-abz6q-cai).
+The canister ID of the token faucet canister is: `dg2ce-tqaaa-aaaah-abz6q-cai`. <br/>
+
+You can access to the interface of the token faucet [here](https://dashboard.internetcomputer.org/canister/dg2ce-tqaaa-aaaah-abz6q-cai).
 
 ## Types ⚙️
 
 All the necessary types are defined in the [types.mo](./src/types.mo) file.
-
 
 ## Interface 📺
 
@@ -113,4 +120,4 @@ actor {
     voteProposal : shared (proposalId : ProposalId, vote : Vote) -> async Result<(),Text>;
     http_request : shared query (request : HttpRequest) -> async HttpResponse;
 }
-````
+```
