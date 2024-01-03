@@ -1,10 +1,8 @@
 # Motoko Bootcamp - DAO Adventure - Graduation
 
-> This repository correspond to the graduation phase of the DAO Adventure. To check out the complete DAO Adventure repository, [click here](https://github.com/motoko-bootcamp/dao-adventure).
-
-# Graduation Project - Forging your own path
-
 <p align="center"><img src="./assets/cover_1.webp" /></p>
+
+> This repository correspond to the graduation phase of the DAO Adventure. To check out the complete DAO Adventure repository, [click here](https://github.com/motoko-bootcamp/dao-adventure).
 
 ## Motivation 💭
 
