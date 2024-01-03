@@ -1,4 +1,8 @@
-# Project 6 - Forging your own path
+# Motoko Bootcamp - DAO Adventure - Graduation
+
+> This repository correspond to the graduation phase of the DAO Adventure. To check out the complete DAO Adventure repository, [click here](https://github.com/motoko-bootcamp/dao-adventure).
+
+# Graduation Project - Forging your own path
 
 <p align="center"><img src="./assets/cover_1.webp" style="width: 500px;" /></p>
 
@@ -6,19 +10,19 @@
 
 A DAO, which stands for Decentralized Autonomous Organization, is a new type of organization (or company) that runs leveraging blockchain technology. This enables us to create more transparent, trusted and efficient organisations.
 
-**DAOs** are the biggest innovation in the field of governance since the invention of the [LLC](https://www.investopedia.com/terms/l/llc.asp) or perhaps even democracy itself. Just like the **steam engine** made the **Industrial Revolution** possible by harnessing **physical powe**r, DAOs harness **political power** and make a Web3 revolution possible. This could fundamentally change how we organize resources, people and capital with the end goal of creating a more stable, flourishing, collaborative and fair civilisation.
-
 <p align="center"><img src="./assets/cover_2.png" style="width: 500px;" /></p>
+
+**DAOs** are the biggest innovation in the field of governance since the invention of the [LLC](https://www.investopedia.com/terms/l/llc.asp) or perhaps even democracy itself. Just like the **steam engine** made the **Industrial Revolution** possible by harnessing **physical powe**r, DAOs harness **political power** and make a Web3 revolution possible. This could fundamentally change how we organize resources, people and capital with the end goal of creating a more stable, flourishing, collaborative and fair civilisation.
 
 ## Mission 🎯
 
-This future is only possible if enough builders stand up to make the dream a reality. 
+This future is only possible if enough builders stand up to make the dream a reality.
 
 Your goal, if you wish to earn your **Motoko Bootcamp Diploma**, is to build a simple DAO. <br/>
 
-Based on all the knowledge you've acquired during your training, you should be able to build, from scratch, a simple DAO that follows the necessary requirements, and even add some additional features if you wish to do so.
-
 <p align="center"><img src="./assets/diploma_mbc.jpg" style="width: 500px;" /></p>
+
+Based on all the knowledge you've acquired during your training, you should be able to build, from scratch, a simple DAO that follows the necessary requirements.
 
 ## Requirements 👨‍🏫
 
@@ -121,3 +125,15 @@ actor {
     http_request : shared query (request : HttpRequest) -> async HttpResponse;
 }
 ```
+
+## Benefits of Graduation 🎓
+
+Your Motoko Bootcamp diploma will grant you the following lifetime benefits:
+
+- Access to a dedicated Motoko Bootcamp Graduate Channel on **OpenChat**.
+- Access to a dedicated Motoko Bootcamp Portal on **DSCVR**.
+- Access to the **Motoko Bootcamp Manifesto**.
+- Possible participation in future **Bootcamps**.
+- Additional benefits to be announced.
+
+> **The Motoko Bootcamp Diploma and the associated on-chain infrastructure are still under development. We will keep you updated on the progress.**
