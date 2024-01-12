@@ -13,8 +13,8 @@ actor DAO {
     type HttpRequest = Types.HttpRequest;
     type HttpResponse = Types.HttpResponse;
 
-    stable var manifesto = "Your manifesto";
-    stable let name = "Your DAO";
+    stable var manifesto = "Your AWESOME manifesto";
+    stable let name = "Your AWESOME DAO";
 
     // Returns the name of the DAO 
     public query func getName() : async Text {
