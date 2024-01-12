@@ -37,7 +37,7 @@ module {
     };
 
     public type Vote = {
-        member : Principal; // The member who voted
+        member : Principal; // The AWESOME member who voted
         vote : Bool; // true = yes, false = no
     };
 
