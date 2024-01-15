@@ -6,6 +6,7 @@ import Hash "mo:base/Hash";
 import HashMap "mo:base/HashMap";
 import Nat "mo:base/Nat";
 import Iter "mo:base/Iter";
+import Account "account";
 import Types "types";
 
 actor DAO {
@@ -22,11 +23,21 @@ actor DAO {
     stable var manifesto = "Your AWESOME manifesto";
     stable let name = "Your AWESOME DAO";
 
+    public type HashMap<A, B> = HashMap.HashMap<A, B>;
+
+
     let proposals = TrieMap.TrieMap<ProposalId, Proposal>(Nat.equal, Hash.hash);
     let dao : HashMap<Principal, Member> = HashMap.HashMap<Principal, Member>(0, Principal.equal, Principal.hash);
 
+    public type Subaccount = Blob;
+    public type Account = {
+        owner : Principal;
+        subaccount : ?Subaccount;
+    };
 
-  type Status = {
+    let ledger : TrieMap.TrieMap<Account, Nat> = TrieMap.TrieMap(Account.accountsEqual, Account.accountsHash);
+
+    type Status = {
     #Open;
     #Accepted;
     #Rejected;
@@ -48,21 +59,58 @@ actor DAO {
     // New members are always Student
     // Returns an error if the member already exists
     public shared ({ caller }) func registerMember(name : Text) : async Result<(),Text> {
-            
-            return #err("Member already exists");
+            switch(dao.get(caller)) {
+                case(?member) return #err("Member already exists");
+                case(null) {
+                    dao.put(caller, { 
+                        name = name;
+                        role = #Student;
+                        });
+                   let defaultAccount = { owner = caller; subaccount = null };
+                   switch (ledger.get(defaultAccount)) {
+                    case (null) ledger.put(defaultAccount, 100);
+                    case (?some) ledger.put(defaultAccount, some + 100);
+                    };
+                    return #ok();
+                };
+            };
     };
 
     // Get the member with the given principal
     // Returns an error if the member does not exist
     public query func getMember(p : Principal) : async Result<Member,Text> {
-            return #err("Not implemented");
+       switch(dao.get(p)) {
+            case(null) return #err("No member found");
+            case(? member) return #ok(member);
+        }
     };
 
     // Graduate the student with the given principal
     // Returns an error if the student does not exist or is not a student
     // Returns an error if the caller is not a mentor
     public shared ({ caller}) func graduate(student : Principal) : async Result<(),Text> {
-            return #err("Not implemented");
+        switch(dao.get(caller)) {
+            case(?member) {
+                switch(member.role) {
+                    case(#Mentor) {
+                switch(dao.get(student)) {
+                    case(null) return #err("No member found");
+                    case(? member2) {
+                        switch(member2.role) {
+                            case(#Student) {
+                                member2.role := #Graduate;
+                                return #ok();
+                            };
+                        };
+                        return #err("You are not a student");
+                    };
+                };
+            };
+                };
+            };
+            return #err("You are not a Mentor");
+
+        };
     };
 
     // Create a new proposal and returns its id
