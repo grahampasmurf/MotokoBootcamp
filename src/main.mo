@@ -1,7 +1,13 @@
 import Result "mo:base/Result";
 import Text "mo:base/Text";
 import Principal "mo:base/Principal";
+import TrieMap "mo:base/TrieMap";
+import Hash "mo:base/Hash";
+import HashMap "mo:base/HashMap";
+import Nat "mo:base/Nat";
+import Iter "mo:base/Iter";
 import Types "types";
+
 actor DAO {
 
     type Result<A,B> = Result.Result<A,B>;
@@ -15,6 +21,17 @@ actor DAO {
 
     stable var manifesto = "Your AWESOME manifesto";
     stable let name = "Your AWESOME DAO";
+
+    let proposals = TrieMap.TrieMap<ProposalId, Proposal>(Nat.equal, Hash.hash);
+    let dao : HashMap<Principal, Member> = HashMap.HashMap<Principal, Member>(0, Principal.equal, Principal.hash);
+
+
+  type Status = {
+    #Open;
+    #Accepted;
+    #Rejected;
+  };
+
 
     // Returns the name of the DAO 
     public query func getName() : async Text {
@@ -31,7 +48,8 @@ actor DAO {
     // New members are always Student
     // Returns an error if the member already exists
     public shared ({ caller }) func registerMember(name : Text) : async Result<(),Text> {
-            return #err("Not implemented");
+            
+            return #err("Member already exists");
     };
 
     // Get the member with the given principal
@@ -56,12 +74,15 @@ actor DAO {
     // Get the proposal with the given id
     // Returns an error if the proposal does not exist
     public query func getProposal(id : ProposalId) : async Result<Proposal,Text> {
-            return #err("Not implemented");
+        switch(proposals.get(id)) {
+            case(null) return #err("Nothing found");
+            case(? proposal) return #ok(proposal);
+        }
     };
 
     // Returns all the proposals
     public query func getAllProposal() : async [Proposal] {
-            return [];
+            return Iter.toArray(proposals.vals());
     };
 
     // Vote for the given proposal 
