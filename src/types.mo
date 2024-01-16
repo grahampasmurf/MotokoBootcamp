@@ -42,11 +42,13 @@ module {
     };
 
     public type Proposal = {
+        id : Nat;
         content : ProposalContent; // The content of the proposal
         creator : Principal; // The member who created the proposal
         created : Time.Time; // The time the proposal was created
         executed : ?Time.Time; // The time the proposal was executed or null if not executed
         votes : [Vote]; // The votes on the proposal so far 
+        voteCount : Int;
         status : ProposalStatus;  // The current status of the proposal
     };
 
