@@ -143,6 +143,7 @@ actor DAO {
     };
 
     func _computeVote(oldScore : Int, vote : Bool) : Int {
+        // real code would have to set bounds based on Int size
         if(vote) return oldScore + 1;
         return oldScore - 1;
     };
