@@ -206,11 +206,11 @@ actor DAO {
             return #err("Not enough tokens");
         };
         switch(proposals.get(proposalId)) {
-            case(null) return #err("proposal not found");
+            case(null) return #err("Proposal not found");
             case(?proposal) {
                 if(proposal.status == #Accepted or proposal.status == #Rejected) return #err("Already voted");
                 for(principal in proposal.votes.vals()) {
-                    if(principal.member == caller) return #err("already voted");
+                    if(principal.member == caller) return #err("Already voted");
                 };
                 // passed all checks
                 let newVoteCount = _computeVote(proposal.voteCount, vote.vote);
