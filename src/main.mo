@@ -23,8 +23,8 @@ actor DAO {
     type HttpRequest = Types.HttpRequest;
     type HttpResponse = Types.HttpResponse;
 
-    stable var manifesto = "Your AWESOME manifesto";
-    stable let name = "Your AWESOME DAO";
+    stable var manifesto = "Your really AWESOME manifesto";
+    stable let name = "Your really AWESOME DAO";
 
     public type HashMap<A, B> = HashMap.HashMap<A, B>;
 
